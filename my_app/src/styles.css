@@ -1,0 +1,54 @@
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 1px;
+    background-color: #333;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    background-color: #999;
+    cursor: pointer;
+  }
+  
+  .cell.ship {
+    background-color: #555;
+  }
+  
+  .ships {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .ship-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ship {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .ship-label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
